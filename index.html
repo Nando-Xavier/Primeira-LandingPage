@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--MENU SUPERIOS-->
+    <div id="menusuperior">
+      <a href="https://www.escoladnc.com.br/"
+        ><img id="logo" src="./imagens/logo.svg" alt="LOGO" />
+      </a>
+
+      <h1 id="titulo-menu_superior">
+        Dê os primeiros passos da sua carreira em Tecnologia
+      </h1>
+      <p id="texto-menu_superior">
+        Inscreva-se no curso gratuito de Introdução à Tecnologia da DNC School e
+        aprenda os principais fundamentos para construir experiências efetivas.
+      </p>
+    </div>
+    <!--MENU INFORMACIONAL-->
+    <div id="menuinformacional">
+      <img src="./imagens/certificado-icon.svg" alt="" />
+    </div>
+    <!--SECÇÃO VIDEO-->
+    <div id="secao-video">
+      <iframe width="424" height="238" src="https://www.youtube.com/embed/45BeP-XJDFA" title="Conheça a Jornada do Aluno DNC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div id="textos">
+        <h3 >
+          Aprenda com especialistas e comece seu primeiro projeto
+        </h3>
+        <p>
+          Conheça o processo de desenvolvimento e entenda como utilizar os principais métodos e ferramentas da área para resolver problemas complexos. <br> <br>
+
+          Conquiste seu certificado e desenvolva um projeto prático para aplicar seus conhecimentos.
+        </p>
+
+      </div>
+
+      
+    </div>
+    <!-- Carrocel Cards-->
+    <div id="carrossel">
+      <h1>Mais de 500 alunos já iniciaram seus estudos</h1>
+        <!--div-cards-->
+      <div id="cards">
+        <img class="seta" id="seta-esquerda" onclick="rolarParaEsquerda()"  src="./imagens/cards/seta-esquerda.svg" alt="">
+        <img id="leonardo" class="cards" src="./imagens/cards/leonardo.svg" alt="">
+        <img id="samantha" class="cards" src="./imagens/cards/samantha.svg" alt="">
+         <img id="bruna" class="cards" src="./imagens/cards/bruna.svg" alt="">
+        <img class="seta" id="seta-direita" onclick="rolarParaDireita()" src="./imagens/cards/seta-direita.svg" alt="">
+      </div>
+    </div>
+
+    <!--FORMULARIO-->
+     <div id="formulario">
+      <h1>Comece agora mesmo e dê o próximo passo da sua carreira</h1>
+      <form id="form-input" action="https://api.sheetmonkey.io/form/upabjoJx4rAiqrDcqhuiAz" method="post">
+        <input type="text" placeholder="Nome" name="Name" required>
+        <input type="email" placeholder="Email" name="Email" required>
+        <input type="number" placeholder="Telefone" name="Phone" required>
+        <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+        <button type="submit">Acesse a ementa grátis</button>
+      </form>
+     </div>
+  </body>
+  <script src="index.js"></script>
+</html>
